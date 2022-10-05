@@ -9,3 +9,15 @@
   font-style: normal;
   font-weight: 400;
 }
+
+%merriweather-700 {
+  font-family: "Merriweather", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
