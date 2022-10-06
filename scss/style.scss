@@ -5,8 +5,12 @@
 
 .header {
   padding: 31px 0 101px;
-  .logo{
-    z-index: 11;
+  background: url("../img/header-bg.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  .logo {
+    z-index: 12;
   }
   &__nav {
     @extend %flex;
@@ -24,7 +28,7 @@
     background-repeat: no-repeat;
     z-index: 0;
     transition: all 0.6s ease-in-out;
-    z-index: 10;
+    z-index: 12;
   }
   &__menu--active {
     transform: scaleY(1);
@@ -47,7 +51,90 @@
     margin: 0 44px 0 52px;
   }
   &__btn-menu {
-    z-index: 11;
+    z-index: 12;
+  }
+  &__inner {
+    display: flex;
+    padding-top: 62px;
+    overflow-x: hidden;
+  }
+  &__info {
+    max-width: 360px;
+  }
+  &__title {
+    @extend %merriweather-700;
+    font-size: 55px;
+    line-height: 100%;
+    color: #000;
+    margin-bottom: 159px;
+    z-index: 10;
+    position: relative;
+  }
+  &__box + .header__box {
+    margin-top: 32px;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    @extend %roboto-400;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #590d56;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+  }
+  &__slider {
+    max-width: 940px;
+    transform: translateX(-175px);
+    margin-bottom: 59px;
+  }
+  &__items,
+  &__card {
+    max-width: 940px;
+  }
+  &__card {
+    max-width: 940px;
+    min-height: 490px;
+    img {
+      width: 940px;
+      height: 490px;
+      object-fit: cover;
+    }
+  }
+  .slick-arrow {
+    display: grid;
+    place-items: center;
+    width: 68px;
+    height: 68px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    //transform: translateX(-50%);
+  }
+  .slick-next.slick-arrow {
+    right: 304px;
+  }
+  .slick-prev.slick-arrow {
+    right: 402px;
+    z-index: 10;
+  }
+  &__more {
+    border: 1px solid #fff;
+    border-radius: 33.5px;
+    padding: 20px 79px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
   }
 }
 .discount {
@@ -184,8 +271,101 @@
   background: url("../img/icons/production-bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position-x: center;
   &__title {
-    color: #000;
+    max-width: 263px;
+  }
+  &__inner {
+    display: flex;
+    gap: 0 30px;
+    margin-bottom: 35px;
+  }
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    max-width: 848px;
+  }
+  &__thumb {
+    width: 263px;
+    height: 150px;
+  }
+  &__thumb-item,
+  &__thumb-card {
+    width: 263px;
+    height: 150px;
+  }
+  &__thumb-card {
+    img {
+      width: 263px;
+      height: 150px;
+      object-fit: cover;
+      opacity: 0.5;
+    }
+  }
+  &__nav {
+    width: 458px;
+    height: 270px;
+  }
+  &__nav-item &__nav-card {
+    width: 458px;
+    height: 270px;
+  }
+  &__nav-card {
+    position: relative;
+    .production__play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    img {
+      width: 458px;
+      height: 270px;
+      object-fit: cover;
+    }
+  }
+  .slick-arrow {
+    display: grid;
+    place-items: center;
+    width: 68px;
+    height: 68px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+    //top: 50%;
+    //transform: translateY(-50%);
+    right: -81px;
+    z-index: 2;
+    //transform: translateX(-50%);
+  }
+  .slick-prev.slick-arrow {
+    top: 54px;
+  }
+  .slick-next.slick-arrow {
+    bottom: 54px;
+  }
+  &__play {
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #47093e;
+    display: grid;
+    place-items: center;
+    z-index: 2;
+  }
+  &__more {
+    margin-left: auto;
+    display: block;
+    width: fit-content;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    padding: 21px 78px;
+    border: 1px solid #fff;
+    border-radius: 33.5px;
   }
 }
 .specialist {
