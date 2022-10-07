@@ -138,13 +138,14 @@
   }
 }
 .discount {
-  padding: 16px 0 22px;
+  //padding: 16px 0 22px;
   border-top: 1px solid #47093e;
   border-bottom: 1px solid #47093e;
   &__text {
     display: flex;
     align-items: center;
     text-align: center;
+    padding: 16px 0 22px;
     gap: 0 30px;
     @extend %roboto-300;
     font-size: 48px;
@@ -415,6 +416,7 @@
     gap: 0 16px;
     position: absolute;
     bottom: -30px;
+    padding: 0;
   }
   .slick-dots li {
     font-size: 0;
@@ -449,6 +451,7 @@
   background: url("../img/information-bg.svg");
   background-repeat: no-repeat;
   background-position-y: bottom;
+  background-position-x: center;
   &__inner {
     display: flex;
     margin-bottom: 36px;
