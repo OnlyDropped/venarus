@@ -18,6 +18,14 @@ $('.header__slider').slick({
   //dots: true,
   prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrow-prev.svg" alt=""></button>',
   nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow-next.svg" alt=""></button>',
+  responsive: [
+    {
+      breakpoint: 376,
+      settings: {
+        arrows: false,
+      }
+    },
+  ]
 })
 
  $('.production__thumb').slick({

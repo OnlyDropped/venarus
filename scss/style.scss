@@ -73,6 +73,10 @@
   &__box + .header__box {
     margin-top: 32px;
   }
+  &__links{
+    display: flex;
+    flex-direction: column;
+  }
   &__box {
     display: flex;
     align-items: center;

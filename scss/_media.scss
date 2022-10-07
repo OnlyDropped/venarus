@@ -5,6 +5,16 @@
 }
 
 @media (max-width: 1210px) {
+  .header {
+    &__title {
+      font-size: 45px;
+    }
+    &__slider {
+      transform: translateX(-139px);
+      margin-bottom: 50px;
+      width: 940px;
+    }
+  }
   .production {
     padding: 285px 0 68px;
   }
@@ -65,8 +75,23 @@
   }
   .buy {
     &__img {
-      border: 1px solid #000;
       width: 700px;
+    }
+  }
+  .header {
+    &__inner {
+      justify-content: space-between;
+    }
+    &__slider {
+      width: 850px;
+      transform: translateX(-60px);
+    }
+    &__card {
+      width: 850px;
+      img {
+        width: 850px;
+        object-fit: contain;
+      }
     }
   }
 }
@@ -99,6 +124,22 @@
   .information {
     padding: 150px 0 55px;
   }
+  .header {
+    &__title {
+      font-size: 35px;
+    }
+    &__slider {
+      width: 750px;
+      transform: translateX(-35px);
+    }
+    &__card {
+      width: 750px;
+      img {
+        width: 750px;
+        object-position: center;
+      }
+    }
+  }
 }
 
 @media (max-width: 1030px) {
@@ -121,6 +162,22 @@
 }
 
 @media (max-width: 1000px) {
+  .header {
+    &__title {
+      font-size: 35px;
+      margin-bottom: 190px;
+    }
+    &__slider {
+      width: 680px;
+      transform: translateX(0px);
+    }
+    &__card {
+      width: 680px;
+      img {
+        width: 680px;
+      }
+    }
+  }
   .action {
     &__item {
       max-width: 345px;
@@ -150,9 +207,30 @@
       width: 680px;
     }
   }
+  .footer {
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 @media (max-width: 945px) {
+  .header {
+    &__title {
+      font-size: 35px;
+      margin-bottom: 190px;
+    }
+    &__slider {
+      width: 630px;
+      transform: translateX(0px);
+    }
+    &__card {
+      width: 630px;
+      img {
+        width: 630px;
+      }
+    }
+  }
   .action {
     &__inner {
       gap: 0 20px;
@@ -189,8 +267,12 @@
       gap: 0 15px;
     }
   }
+  .footer {
+    &__nav {
+      gap: 0 15px;
+    }
+  }
 }
-
 @media (max-width: 925px) {
   .action {
     .title {
@@ -222,6 +304,43 @@
     &__img {
       width: 600px;
       height: 450px;
+    }
+  }
+}
+
+@media (max-width: 910px) {
+  .header {
+    &__inner {
+      flex-direction: column;
+      gap: 20px 0;
+    }
+    &__info {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      margin-bottom: 15px;
+      font-size: 33px;
+    }
+    &__box + .header__box {
+      margin-top: 25px;
+    }
+    &__slider {
+      width: 100%;
+    }
+    &__card {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &__links {
+      flex-direction: row;
+      gap: 0 20px;
+    }
+    &__content {
+      padding-top: 25px;
     }
   }
 }
@@ -262,9 +381,25 @@
       width: 575px;
     }
   }
+  .footer {
+    &__container {
+      max-width: 300px;
+    }
+  }
 }
 
 @media (max-width: 850px) {
+  .header {
+    &__inner {
+      padding-top: 35px;
+    }
+    &__title {
+      font-size: 31px;
+    }
+    &__slider {
+      margin-bottom: 20px;
+    }
+  }
   .action {
     &__list {
       flex-wrap: wrap;
@@ -421,8 +556,38 @@
       font-size: 18px;
     }
   }
+  .footer {
+    &__title {
+      text-align: center;
+    }
+    &__nav {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px 0;
+    }
+    &__container {
+      max-width: 350px;
+      text-align: center;
+    }
+    &__container:last-child {
+      margin: 0 auto;
+    }
+  }
 }
 @media (max-width: 680px) {
+  .header {
+    &__title {
+      font-size: 29px;
+    }
+    &__links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px 10px;
+    }
+    &__content {
+      padding-top: 0;
+    }
+  }
   .specialist {
     &__slider {
       max-width: 600px;
@@ -514,6 +679,15 @@
 }
 
 @media (max-width: 595px) {
+  .header {
+    background-position-y: inherit;
+    &__card {
+      min-height: 390px;
+      img {
+        height: 390px;
+      }
+    }
+  }
   .information {
     &__card--one {
       width: 170px;
@@ -525,6 +699,11 @@
     }
     &__card--four {
       width: 407px;
+    }
+  }
+  .footer {
+    &__container {
+      max-width: 300px;
     }
   }
 }
@@ -592,9 +771,48 @@
       max-width: 100%;
     }
   }
+  .footer {
+    &__container {
+      max-width: 260px;
+    }
+  }
 }
 
 @media (max-width: 500px) {
+  .header {
+    background-position-y: bottom;
+    &__links {
+      gap: 0px 65px;
+    }
+    &__card {
+      min-height: 330px;
+      img {
+        height: 330px;
+      }
+    }
+    &__box {
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+      }
+    }
+    &__btn {
+      display: none;
+    }
+    &__btn-menu {
+      display: block;
+    }
+    .slick-prev.slick-arrow {
+      right: 50%;
+      transform: translateX(-50%);
+    }
+    .slick-next.slick-arrow {
+      right: 50%;
+      transform: translateX(65%);
+      z-index: 1;
+    }
+  }
   .specialist {
     &__slider {
       max-width: 440px;
@@ -615,6 +833,23 @@
     .link {
       padding: 10px 25px;
       font-size: 17px;
+    }
+  }
+  .footer {
+    &__text {
+      margin-bottom: 20px;
+    }
+    &__nav {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      gap: 20px 0;
+    }
+    &__container {
+      max-width: 100%;
+    }
+    &__list {
+      padding: 0;
+      justify-content: center;
     }
   }
 }
@@ -653,9 +888,28 @@
       height: 350px;
     }
   }
+  .footer {
+    &__title {
+      font-size: 28px;
+    }
+  }
 }
 
 @media (max-width: 415px) {
+  .header {
+    &__title {
+      font-size: 28px;
+    }
+    &__links {
+      gap: 0px 40px;
+    }
+    &__card {
+      min-height: 300px;
+      img {
+        height: 300px;
+      }
+    }
+  }
   .buy {
     &__list {
       justify-content: center;
@@ -668,9 +922,49 @@
       display: block;
     }
   }
+  .footer {
+    &__create p {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
 }
 
 @media (max-width: 375px) {
+  .header {
+    &__title {
+      font-size: 24px;
+      line-height: 140%;
+      text-align: center;
+    }
+    &__links {
+      gap: 0px 40px;
+    }
+    &__card {
+      min-height: 300px;
+      background: url("../img/header/2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      img {
+        height: 300px;
+        display: none;
+      }
+    }
+    .slick-arrow {
+      width: 50px;
+      height: 50px;
+    }
+    &__menu {
+      gap: 40px 0;
+      padding-left: 0px;
+      align-items: center;
+      background-position-y: center;
+    }
+    &__link {
+      font-size: 25px;
+    }
+  }
   .discount {
     &__text {
       padding: 5px 0px;
@@ -743,12 +1037,31 @@
       font-size: 20px;
     }
   }
-  .buy{
+  .buy {
     padding: 30px 0;
+  }
+  .footer {
+    padding: 30px 0;
+    &__title {
+      font-size: 26px;
+    }
   }
 }
 
 @media (max-width: 320px) {
+  .header {
+    .logo {
+      img {
+        width: 150px;
+      }
+    }
+    &__title {
+      font-size: 19px;
+    }
+    &__card {
+      min-height: 250px;
+    }
+  }
   .action {
     &__span {
       font-size: 16px;
@@ -787,6 +1100,16 @@
     }
     &__card--four {
       width: 303px;
+    }
+  }
+  .footer {
+    &__title {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    &__list {
+      gap: 0 35px;
+      margin-bottom: 25px;
     }
   }
 }
