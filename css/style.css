@@ -1073,6 +1073,34 @@ button {
     -o-object-fit: contain;
        object-fit: contain;
   }
+  .production {
+    padding: 250px 0 68px;
+  }
+  .production .title {
+    margin-bottom: 0;
+  }
+  .production .slick-arrow {
+    width: 55px;
+    height: 55px;
+    margin-top: auto;
+    bottom: -25px;
+    right: 0;
+    margin-left: auto;
+  }
+  .production .slick-prev.slick-arrow {
+    bottom: -25px;
+    right: 65px;
+  }
+  .production .slick-next.slick-arrow {
+    bottom: -25px;
+  }
+  .production__slider {
+    gap: 0 20px;
+  }
+  .production__more {
+    color: #000;
+    border: 1px solid #000;
+  }
 }
 
 @media (max-width: 1060px) {
@@ -1114,6 +1142,12 @@ button {
     -o-object-position: center;
        object-position: center;
   }
+  .production {
+    padding: 200px 0 68px;
+  }
+  .production__title {
+    font-size: 29px;
+  }
 }
 
 @media (max-width: 1030px) {
@@ -1129,6 +1163,23 @@ button {
   .specialist__img {
     width: 700px;
     height: 500px;
+  }
+  .production {
+    padding: 155px 0 68px;
+    background-size: cover;
+  }
+  .production__inner {
+    gap: 20px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .production__title {
+    max-width: 100%;
+  }
+  .production__more {
+    margin: 0 auto 0 0;
   }
 }
 
@@ -1438,6 +1489,9 @@ button {
   .buy__img {
     width: 470px;
   }
+  .production {
+    padding: 80px 0 68px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1456,6 +1510,44 @@ button {
     height: 75px;
     top: -26px;
     right: 0px;
+  }
+}
+
+@media (max-width: 760px) {
+  .production {
+    padding: 90px 0 65px;
+  }
+  .production__slider {
+    gap: 0 20px;
+    max-width: 756px;
+  }
+  .production__nav {
+    width: 442px;
+  }
+  .production__nav-item, .production__nav-card {
+    width: 420px;
+  }
+  .production__nav-card img {
+    width: 420px;
+  }
+}
+
+@media (max-width: 740px) {
+  .production__slider {
+    max-width: 650px;
+  }
+  .production__nav {
+    width: 366px;
+  }
+  .production__nav-item .production__nav-card {
+    width: 366px;
+    height: 270px;
+  }
+  .production__nav-card {
+    width: 366px;
+  }
+  .production__nav-card img {
+    width: 366px;
   }
 }
 
@@ -1541,6 +1633,40 @@ button {
   .information__card--four {
     width: 470px;
   }
+  .production__slider {
+    max-width: 600px;
+  }
+  .production__thumb {
+    width: 230px;
+  }
+  .production__thumb-item,
+  .production .production__thumb-card {
+    width: 230px;
+    height: 150px;
+  }
+  .production__thumb-card img {
+    width: 230px;
+  }
+  .production__nav {
+    width: 348px;
+  }
+  .production__nav .slick-arrow {
+    bottom: 0;
+    right: 0px;
+    margin-left: auto;
+    width: 45px;
+    height: 45px;
+  }
+  .production__nav-item .production__nav-card {
+    width: 348px;
+  }
+  .production__nav-card img {
+    width: 348px;
+  }
+  .production__more {
+    font-size: 18px;
+    padding: 13px 50px;
+  }
 }
 
 @media (max-width: 645px) {
@@ -1562,6 +1688,10 @@ button {
   .action__span {
     max-width: 100%;
   }
+  .production__nav .slick-arrow {
+    top: 0;
+    right: 0;
+  }
 }
 
 @media (max-width: 635px) {
@@ -1573,6 +1703,26 @@ button {
   }
   .specialist__img {
     width: 580px;
+  }
+  .production__thumb {
+    display: none;
+  }
+  .production__slider {
+    max-width: 100%;
+  }
+  .production__nav {
+    max-width: 100%;
+    width: 100%;
+  }
+  .production__nav-item .production__nav-card {
+    max-width: 100%;
+    width: 100%;
+  }
+  .production__nav-card img {
+    width: 100%;
+    max-width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
@@ -1933,6 +2083,22 @@ button {
   }
   .footer__title {
     font-size: 26px;
+  }
+  .production {
+    padding: 65px 0;
+  }
+  .production__title {
+    text-align: center;
+  }
+  .production__nav-card img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .production .slick-prev.slick-arrow {
+    bottom: -55px;
+  }
+  .production .slick-next.slick-arrow {
+    bottom: -55px;
   }
 }
 
