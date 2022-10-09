@@ -1040,7 +1040,7 @@
   }
   .specialist {
     &__slider {
-      max-width: 400px;
+      max-width: 100%;
     }
     &__item,
     &__card {
@@ -1161,7 +1161,7 @@
       font-size: 17px;
     }
     &__slider {
-      max-width: 345px;
+      max-width: 100%;
     }
     &__item,
     &__card {

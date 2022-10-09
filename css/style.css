@@ -1920,7 +1920,7 @@ button {
     margin-left: 30px;
   }
   .specialist__slider {
-    max-width: 400px;
+    max-width: 100%;
   }
   .specialist__item, .specialist__card {
     max-width: 400px;
@@ -2036,7 +2036,7 @@ button {
     font-size: 17px;
   }
   .specialist__slider {
-    max-width: 345px;
+    max-width: 100%;
   }
   .specialist__item, .specialist__card {
     max-width: 345px;
