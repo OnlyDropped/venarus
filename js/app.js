@@ -16,8 +16,8 @@ $('.header__slider').slick({
   fade: true, 
   arrows: true, 
   //dots: true,
-  prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrow-prev.svg" alt=""></button>',
-  nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow-next.svg" alt=""></button>',
+  prevArrow: '<button type="button" class="slick-prev"><svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.0796 0.39973L1.47962 13.9997L15.0796 27.5996" stroke="white"/></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.920266 27.5999L14.5203 13.9999L0.920266 0.399905" stroke="white"/></svg></button>',
   responsive: [
     {
       breakpoint: 376,
@@ -25,6 +25,12 @@ $('.header__slider').slick({
         arrows: false,
       }
     },
+    {
+      breakpoint: 321,
+      settings: {
+        arrows: true,
+      }
+    }
   ]
 })
 

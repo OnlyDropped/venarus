@@ -1831,6 +1831,9 @@ button {
   .header {
     background-position-y: bottom;
   }
+  .header .logo {
+    z-index: 15;
+  }
   .header__links {
     gap: 0px 65px;
   }
@@ -2004,6 +2007,13 @@ button {
   .header__link {
     font-size: 25px;
   }
+  .header__more {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  .header__more:hover {
+    background: rgba(91, 14, 88, 0.3);
+  }
   .discount__text {
     padding: 5px 0px;
     font-size: 30px;
@@ -2103,14 +2113,73 @@ button {
 }
 
 @media (max-width: 320px) {
+  .header {
+    padding: 16px 0 21px;
+  }
   .header .logo img {
-    width: 150px;
+    width: 135px;
+    height: 25px;
   }
   .header__title {
     font-size: 19px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+    margin: 0;
+  }
+  .header__btn {
+    display: block;
+  }
+  .header__btn:first-child {
+    width: 24px;
+    height: 24px;
+  }
+  .header__location {
+    width: 21px;
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  .header__navigation {
+    margin-left: auto;
   }
   .header__card {
     min-height: 250px;
+  }
+  .header__inner {
+    padding-top: 30px;
+    gap: 0;
+  }
+  .header__links {
+    display: none;
+  }
+  .header__more {
+    border: 1px solid #5b0e58;
+    padding: 11px 26px 8px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #5b0e58;
+  }
+  .header__btn-menu {
+    width: 33px;
+    height: 21px;
+    margin-left: 14px;
+  }
+  .header .slick-arrow {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #5b0e58;
+    background: #fff;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .header .slick-arrow svg {
+    width: 14px;
+    height: 17px;
+  }
+  .header .slick-arrow path {
+    stroke: #5b0e58;
   }
   .action__span {
     font-size: 16px;
@@ -2122,7 +2191,7 @@ button {
     font-size: 23px;
   }
   .specialist__slider {
-    max-width: 288px;
+    max-width: 100%;
   }
   .specialist__item, .specialist__card {
     max-width: 288px;

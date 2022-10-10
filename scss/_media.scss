@@ -947,6 +947,9 @@
 @media (max-width: 500px) {
   .header {
     background-position-y: bottom;
+    .logo{
+      z-index: 15;
+    }
     &__links {
       gap: 0px 65px;
     }
@@ -1130,6 +1133,13 @@
     &__link {
       font-size: 25px;
     }
+    &__more{
+      transition: all .5s ease-in-out;
+      &:hover{
+        background: rgba($color: #5B0E58, $alpha: .3);
+
+      }
+    }
   }
   .discount {
     &__text {
@@ -1233,16 +1243,72 @@
 
 @media (max-width: 320px) {
   .header {
+    padding: 16px 0 21px;
     .logo {
       img {
-        width: 150px;
+        width: 135px;
+        height: 25px;
       }
     }
     &__title {
       font-size: 19px;
+      font-size: 40px;
+      line-height: 40px;
+      text-align: left;
+      margin: 0;
+    }
+    &__btn {
+      display: block;
+      &:first-child {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &__location {
+      width: 21px;
+      height: 25px;
+      margin-left: 10px;
+      margin-right: 0;
+    }
+    &__navigation{
+      margin-left: auto;
     }
     &__card {
       min-height: 250px;
+    }
+    &__inner {
+      padding-top: 30px;
+      gap: 0;
+    }
+    &__links {
+      display: none;
+    }
+    &__more {
+      border: 1px solid #5b0e58;
+      padding: 11px 26px 8px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #5b0e58;
+    }
+    &__btn-menu {
+      width: 33px;
+      height: 21px;
+      margin-left: 14px;
+    }
+    .slick-arrow {
+      width: 34px;
+      height: 34px;
+      border: 1px solid #5b0e58;
+      background: #fff;
+      left: 50%;
+      transform: translateX(-50%);
+      svg {
+        width: 14px;
+        height: 17px;
+      }
+      path {
+        stroke: #5b0e58;
+      }
     }
   }
   .action {
@@ -1258,7 +1324,7 @@
       font-size: 23px;
     }
     &__slider {
-      max-width: 288px;
+      max-width: 100%;
     }
     &__item,
     &__card {
